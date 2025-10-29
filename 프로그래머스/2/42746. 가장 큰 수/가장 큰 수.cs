@@ -11,7 +11,7 @@ public class Solution {
             arr[i] = numbers[i].ToString();
         }
         
-        Array.Sort(arr, (a, b) => string.Compare(b + a, a + b, StringComparison.Ordinal));
+        Array.Sort(arr, (a, b) => string.Compare(b + a, a + b));
         
         if(arr[0] == "0") return "0";
         
