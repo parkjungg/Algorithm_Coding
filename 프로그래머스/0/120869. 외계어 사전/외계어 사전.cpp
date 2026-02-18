@@ -16,7 +16,6 @@ int solution(vector<string> spell, vector<string> dic) {
             if(word.find(s) == string::npos)
             {
                 isValid = false;
-                break;
             }
         }
         if(isValid)
