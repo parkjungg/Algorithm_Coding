@@ -14,7 +14,9 @@ void BackTracking(int start, int depth, int sum)
     }
     for(int i = start; i < numbers.size(); i++)
     {
-        BackTracking(i + 1, depth + 1, sum + numbers[i]);
+        sum += numbers[i];
+        BackTracking(i + 1, depth + 1, sum);
+        sum -= numbers[i];
     }
 }
 int solution(vector<int> number) {
