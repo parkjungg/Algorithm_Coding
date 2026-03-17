@@ -28,5 +28,3 @@ string solution(vector<int> food) {
     }
     return answer;
 }
-
-// 일단 0을 먼저 넣고, 칼로리 높은 음식부터 좌우로 쌓음, 단, 좌우가 개수가 같아야함
