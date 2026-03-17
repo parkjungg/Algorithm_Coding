@@ -21,4 +21,3 @@ vector<int> solution(vector<int> numbers) {
     }
     return answer;
 }
-// set(중복 방지)
