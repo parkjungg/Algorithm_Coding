@@ -14,17 +14,10 @@ vector<int> solution(vector<int> answers) {
     int cnt2 = 0;
     int cnt3 = 0;
     
-    for(int i = 0; i < answers.size(); i++)
-    {
-        if(answers[i] == a[(i % 5)]) cnt1++;
-    }
-    for(int i = 0; i < answers.size(); i++)
-    {
-        if(answers[i] == b[(i % 8)]) cnt2++;
-    }
-    for(int i = 0; i < answers.size(); i++)
-    {
-        if(answers[i] == c[(i % 10)]) cnt3++;
+    for(int i = 0; i < answers.size(); i++) {
+        if(answers[i] == a[i % 5]) cnt1++;
+        if(answers[i] == b[i % 8]) cnt2++;
+        if(answers[i] == c[i % 10]) cnt3++;
     }
     mx = max(max(cnt3, cnt2), cnt1);
     
