@@ -33,9 +33,3 @@ int solution(int k, vector<int> tangerine) {
     
     return answer;
 }
-// 3 2 2 2 1 1
-// 1 : 1
-// 2 : 2
-// 3 : 2
-// 4 : 1
-// 5 : 2
